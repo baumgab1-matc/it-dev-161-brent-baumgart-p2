@@ -1,6 +1,6 @@
 import loadingGif from '../loading.gif'
 
-
+//Component used when loading customer orders
 const LoadingSpinner = () => {
     return ( 
         <img

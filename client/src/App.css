@@ -253,6 +253,12 @@
 /* END OF REGISTER STYLES */
 
 /* START OF ORDERS STYLES */
+.total-orders{ 
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
 .past-order-container {
   margin: 0 auto;
   width: 80%;

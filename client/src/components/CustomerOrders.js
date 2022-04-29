@@ -16,14 +16,13 @@ const CustomerOrders = () => {
     //holds all past orders
     const [orderObject, setOrderObject] = useState([{}]);
 
-    //get the id from customerContext, needed to fetch customer orders
-    const { id } = useContext(CustomerContext);
 
     //authenticate customer to make sure they are allowed to view their orders
     const authenticateUser = () => {
         const token = localStorage.getItem('token');
+        const customerId = localStorage.getItem('id');
 
-        if (token) {
+        if (token && customerId) {
             const config = {
                 headers: {
                     "Content-Type": "application/json",
@@ -31,19 +30,14 @@ const CustomerOrders = () => {
                 },
             };
 
-            //get the customer id from context
-            const loadId = id;
-
-            axios
-                .get(`http://localhost:5000/api/customers/${loadId}/orders`, config)
+             axios
+                .get(`http://localhost:5000/api/customers/${customerId}/orders`, config)
                 .then(response => {
                     //customer has been authenticated, set orders and set authenticating flag to false
                     setOrderObject(response.data);
                     setIsAuthenticating(false);
                 })
                 .catch(error => {
-                    localStorage.removeItem('token');
-                    localStorage.removeItem('isLoggedIn');
                     console.log('error');
                     console.error(`Error logging in: ${error}`);
                 });
@@ -76,7 +70,7 @@ const CustomerOrders = () => {
 
         return (
             <div className="orders">
-                <h2> Total orders {orderObject.length}</h2>
+                <h1 className="total-orders"> Total orders {orderObject.length}</h1>
                 <div>
                     {orderObject.map((orderItem, i) => (
                         <OrderItem key={i} orderItem={orderItem} />

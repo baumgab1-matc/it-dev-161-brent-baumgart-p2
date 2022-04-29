@@ -69,7 +69,6 @@ const ShoppingCart = () => {
             </div>
 
             {cart.length !== 0 && <div className="place-order">
-                {/* todo add amount */}
                 <h5>Amount: </h5>
                 <button onClick={handleOrder}>Place Order</button>
 

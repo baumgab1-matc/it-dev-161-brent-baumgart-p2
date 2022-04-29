@@ -21,7 +21,6 @@ const Register = () => {
     const handleRegister = async (e) => {
         e.preventDefault();
 
-        //todo update customer database have first and last names
         const newCustomer = {
             firstName: fname,
             lastName: lname,

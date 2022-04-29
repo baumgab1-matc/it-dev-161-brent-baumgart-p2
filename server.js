@@ -109,6 +109,7 @@ app.get('/api/customers/:id', auth, async (req, res) => {
 });
 
 
+
 const returnToken = (customer, res) => {
     const payload = {
         customer: {
@@ -229,6 +230,7 @@ app.post('/api/orders', auth, async (req, res) => {
 
         res.send('success');
     } catch (error) {
+        console.log(error);
         res.status(500).send('Server error');
     }
 });

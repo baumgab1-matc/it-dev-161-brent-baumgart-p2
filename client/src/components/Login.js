@@ -34,7 +34,6 @@ const Login = () => {
             const body = JSON.stringify(customerToLogIn);
             const res = await axios.post('http://localhost:5000/api/login', body, config);
                         
-            //todo should this be in customer context
             const customer = await res.data.customer;
             setCustomerId(customer._id);
             localStorage.setItem('isLoggedIn', true);

@@ -18,7 +18,6 @@ const CheckoutItem = ({product}) => {
                 <h4>{product.price}</h4>
                 <h4>{product.amount}</h4>
                 <br />
-                {/* fix href */}
                 <a href="#" onClick={handleRemove}>Remove</a>  
             </div>
          </div>         

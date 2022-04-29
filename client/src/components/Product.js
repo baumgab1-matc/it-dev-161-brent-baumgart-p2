@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import ProductContext from "../context/ProductContext";
 
+//component that shows product details
 const Product = ({product}) => {
 
 

@@ -1,5 +1,7 @@
 import { createContext, useState } from "react";
-import axios from 'axios';
+
+
+//Context wasn't covered in class but I gave it a shot
 
 const CustomerContext = createContext();
 
@@ -9,43 +11,14 @@ export const CustomerProvider = ({ children }) => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
 
     //holds id of customer
+    //this fails when page is refreshed, that's why I added local storage for id
     const [id, setId] = useState('');
 
-    //when user logs in set flag for login to be true 
-    //and set a local storage variable to be true to prevent losing login info on refresh
-    // const login = () => {
-    //     setIsLoggedIn(true);
-    //     localStorage.setItem('isLoggedIn', true);
-    // }
-
     const setCustomerId = (idToSet) => {
-        setId(idToSet);
+        localStorage.setItem('id', idToSet);
+        setId(localStorage.getItem('id'));
     }
 
-
-    // const fetchCustomerId = () => {
-    //     const token = localStorage.getItem('token');
-
-    //     const config = {
-    //         headers: {
-    //             "Content-Type": "application/json",
-    //             "x-auth-token": token,
-    //         }
-    //     };
-
-    //     axios
-    //         .get('http://localhost:5000/api/auth', config)
-    //         .then(response => {
-    //              setId(response.data._id);
-    //         })
-    //         .catch(error => {
-    //             localStorage.removeItem('token');
-    //             localStorage.removeItem('isLoggedIn');
-    //             console.log('error');
-    //             console.error(`Error logging in: ${error}`);
-    //         });
-
-    // }
 
     return (
         <CustomerContext.Provider

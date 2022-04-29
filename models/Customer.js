@@ -4,12 +4,10 @@ const Schema = mongoose.Schema;
 const customerSchema = new Schema( {
     firstName: {
         type: String,
-        required: true,
         trim: true        
     },
     lastName: {
         type: String,
-        required: true,
         trim: true
     },
     email: {

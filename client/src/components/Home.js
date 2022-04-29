@@ -3,6 +3,7 @@ import CustomerContext from "../context/CustomerContext";
 import ProductContext from "../context/ProductContext";
 import Product from "./Product";
 
+//This is component that shows the home page
 const Home = () => {
 
     //get array of all products from context
