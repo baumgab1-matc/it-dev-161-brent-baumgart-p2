@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+}
+
+/* HEADER STYLES */
+
+.header {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  padding-left: 40px;
+  padding: 20px;
+}
+
+.logo {
+  text-decoration: none;
+  color : #fff;
+  padding: 20px;
+
+}
+
+.header ul{
+  list-style-type: none;
+  flex: 1;
+  text-align: right;
+  padding-right: 30px;
+  margin-right: 30px;
+}
+
+.header ul li {
+  display: inline;
+  text-align: center;
+  padding: 12px;
+}
+
+.header ul li a {
+  font-size: calc(5px + 2vmin);
+  color : #fff;
+  text-decoration: none;
+}
+
+/* END OF HEADER STYLES */
+
+
+/* PRODUCT GALLERY STYLES */
+.product-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+/* END OF PRODUCT GALLERY STYLES */
+
+
+/* PRODUCT STYLES */
+.product {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.product-name {
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.product-special {
+  margin-top: 8px;
+  color: #a9a9a9;
+  text-transform: uppercase;
+}
+
+.product-info {
+  display: flex;
+  column-gap: 120px;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  width: 50%;
+}
+
+.product button{
+  font-size: 18px;
+  width: 180%;
+  margin-top: 25px;
+  border-radius: 5px;
+}
+/* END OF PRODUCT STYLES */
+
+
+/* START OF CHECKOUT STYLES */
+.checkout-card {
+  display: flex;
+  padding: 20px;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.checkout-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout {
+  margin: 0;
+  text-align: center;
+}
+
+.checkout h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 33px;
+  margin-top: 50px;
+}
+
+.empty-cart-text {
+  margin-top: 50px;
+}
+
+.empty-cart-icon {
+  margin-top: 30px;
+  font-size: 200px;
+}
+
+.place-order {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.place-order button {
+  width: 120px;
+  height: 30px;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 18px;
+
+}
+
+.login-warning {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+/* END OF CHECKOUT STYLES */
+
+
+/* START OF LOGIN PAGE STYLES */
+.login-container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.login-container form{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.login-container h2 {
+  font-size: 33px;
+  margin-top: 50px;
+  text-transform: uppercase;
+}
+
+.login-container input {
+  width: 70%;
+  margin: 0 auto;
+  height: 20px;
+  margin-bottom: 20px;
+  border-width: 3px;
+  font-size: 22px;
+}
+
+.login {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.login-button {
+  width: 70px;
+  padding: 5px;
+  margin: 0  auto;
+  margin-top: 7px;
+  font-size: 16px;
+}
+
+.create-account-helper-text {
+  margin-top: 20px;
+}
+/* END OF LOGIN PAGE STYLES */
+
+
+/* START OF REGISTER PAGE STYLES */
+.register-container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.register-container form{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.register-container h2 {
+  font-size: 33px;
+  margin-top: 50px;
+  text-transform: uppercase;
+}
+
+.register-container input {
+  width: 70%;
+  margin: 0 auto;
+  height: 20px;
+  margin-bottom: 20px;
+  border-width: 3px;
+  font-size: 22px;
+}
+
+.register {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.register-button {
+  width: 70px;
+  padding: 5px;
+  margin: 0  auto;
+  margin-top: 7px;
+  font-size: 16px;
+}
+
+/* END OF REGISTER STYLES */
+
+/* START OF ORDERS STYLES */
+.past-order-container {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  padding: 20px;
+  margin-bottom: 30px;
+  
+}
+
+.past-order-container img {
+  width: 200px;
+}
+
+.past-order-item {
+  
+}
