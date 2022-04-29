@@ -10,7 +10,7 @@ The site allows a customer to login in and make a purchase. <br>
 The site will not allow someone who does not have an account to order. <br>
 The site allows for people to create an account. <br>
 Once logged in a customer can view all past orders. <br>
-Customers can only view their past orders and anyone elses. <br>
+Customers can only view their past orders and not anyone elses. <br>
 The cart is updated when a new item is added.  <br>
 <br>
 <br>
