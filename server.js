@@ -207,9 +207,12 @@ app.get('/api/auth', auth, async (req, res) => {
     }
 });
 
+
+
 /**
 * @route POST api/orders
 * @desc create order
+* Note I might change this later to /api/orders/customerId 
 */
 app.post('/api/orders', auth, async (req, res) => {
     try {
