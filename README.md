@@ -4,7 +4,7 @@
 I went with option 1 and am using MongoDB Atlas for backend and React as my frontend.
 
 # Requirement 2
-I made a small ecommerce site for buying coffee. I focused more making sure that backend works correct with the idea that later I can make the frontend look better.
+I made a small ecommerce site for buying coffee. 
 
 The site allows a customer to login in and make a purchase. <br>
 The site will not allow someone who does not have an account to order. <br>
